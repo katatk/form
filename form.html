@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title></title>
+
+    <style>
+        html {
+            font-size: 16px;
+        }
+        
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        
+        label,
+        input,
+        select,
+        .label {
+            display: block;
+        }
+        
+        input[type=radio],
+        #gender-group label {
+            display: inline;
+        }
+        
+        ul {
+            color: #fff;
+            display: inline-block;
+            margin: 0.5rem 0 0;
+        }
+        
+        ul li {
+            padding: 0.5rem;
+        }
+        
+        .invalid {
+            background-color: #f72222;
+        }
+        
+        .valid {
+            background-color: #09e879;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header role="banner">
+    </header>
+
+    <main>
+        <h1>Form</h1>
+        <form>
+            <div class="form-group" id="email-group">
+                <label for="email">Email address:</label>
+                <input type="email" id="email" placeholder="Enter your email address">
+            </div>
+            <div class="form-group" id="name-group">
+                <label for="full-name">Full name:</label>
+                <input type="text" id="full-name" placeholder="Enter your full name">
+            </div>
+            <div class="form-group" id="age-group">
+                <label for="age">Age:</label>
+                <input type="text" id="age" placeholder="Enter your age" size="9">
+            </div>
+            <div class="form-group" id="movie-group">
+                <label for="movie">Fav Movie</label>
+                <select id="movie">
+                    <option>Please Select</option>
+                    <option>Fight Club</option>
+                    <option>Lord of the Rings</option>
+                    <option>Pirates of the Caribbean</option>
+                    <option>Harry Potter</option>
+                </select>
+            </div>
+
+            <div class="form-group" id="gender-group">
+                <span class="label">Gender</span>
+
+
+                <input type="radio" name="gender" value="female" id="female">
+                <label for="female">Female</label>
+
+
+                <input type="radio" name="gender" value="male" id="male">
+                <label for="male">Male</label>
+
+
+                <input type="radio" name="gender" value="other" id="other">
+                <label for="other">Other</label>
+
+            </div>
+
+            <input type="button" value="Validate" onclick="validateForm()">
+        </form>
+
+    </main>
+    <footer role="contentinfo">
+    </footer>
+    <script src="form.js"></script>
+</body>
+
+</html>
